@@ -4,7 +4,7 @@
   "description": "Simple IoP Platform = DB Module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/luiscastillo27/platziverse/issues"
   },
-  "homepage": "https://github.com/luiscastillo27/platziverse#readme"
+  "homepage": "https://github.com/luiscastillo27/platziverse#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
 }

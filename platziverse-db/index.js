@@ -1,6 +1,6 @@
 'use stric'
 
-module.exports = function(config){
+module.exports = function (config) {
   const Agent = {}
   const Metric = {}
 
