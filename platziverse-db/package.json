@@ -4,6 +4,7 @@
   "description": "Simple IoP Platform = DB Module",
   "main": "index.js",
   "scripts": {
+    "setup": "DEBUG=platziverse:* node setup.js",
     "lint": "standard"
   },
   "repository": {
@@ -18,5 +19,11 @@
   "homepage": "https://github.com/luiscastillo27/platziverse#readme",
   "devDependencies": {
     "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
   }
 }
