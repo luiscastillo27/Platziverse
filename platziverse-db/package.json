@@ -4,7 +4,7 @@
   "description": "Simple IoP Platform = DB Module",
   "main": "index.js",
   "scripts": {
-    "test": "DEBUG=platziverse:* ava tests/ --verbose",
+    "test": "DEBUG=platziverse:* nyc --reporter=lcov ava tests/ --verbose",
     "setup": "DEBUG=platziverse:* node setup.js",
     "lint": "standard"
   },
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/luiscastillo27/platziverse#readme",
   "devDependencies": {
     "ava": "^0.25.0",
+    "nyc": "^12.0.2",
     "sqlite": "^2.9.2",
     "standard": "^11.0.1"
   },

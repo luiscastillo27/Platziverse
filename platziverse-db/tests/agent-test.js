@@ -1,7 +1,17 @@
 'use stric'
 
 const test = require('ava')
+let db = null
 
-test('Make it pass', t => {
-  t.pass()
+let config = {
+  loggin: function(){}
+}
+
+test.beforeEach(async () => {
+  const setupDataBase = require("../")
+  db = await setupDataBase(config)
+})
+
+test('Agent', t => {
+  t.truthy(db.Agent, "Agent sure exit")
 })
