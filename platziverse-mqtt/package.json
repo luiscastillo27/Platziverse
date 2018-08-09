@@ -1,0 +1,31 @@
+{
+  "name": "platziverse-mqtt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "DEBUG=platziverse:* nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiscastillo27/platziverse.git"
+  },
+  "author": "Luis Manuel Castillo Zamorano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luiscastillo27/platziverse/issues"
+  },
+  "homepage": "https://github.com/luiscastillo27/platziverse#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "mosca": "^2.8.3",
+    "redis": "^2.8.0"
+  }
+}
