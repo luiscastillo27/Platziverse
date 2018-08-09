@@ -1,4 +1,4 @@
-'use stric'
+'use strict'
 
 function parsePayload (payload) {
   if (payload instanceof Buffer) {
@@ -8,8 +8,10 @@ function parsePayload (payload) {
   try {
     payload = JSON.parse(payload)
   } catch (e) {
-    payload = {}
+    payload = null
   }
+
+  return payload
 }
 
 module.exports = {
