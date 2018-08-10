@@ -1,10 +1,12 @@
-
 const PlatziverseAgent = require('../')
 
 const agent = new PlatziverseAgent({
   name: 'Node.js Reloaded',
-  username: 'luis',
-  interval: 2000
+  username: 'admin',
+  interval: 1000,
+  mqtt: {
+    host: 'mqtt://api.platziverse.space'
+  }
 })
 
 agent.addMetric('rss', function getRss () {

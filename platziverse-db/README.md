@@ -1,11 +1,12 @@
 # platziverse-db
+
 ## Usage
 
 ``` js
-const setupDataBase = required("latziverse-db")
+const setupDatabase = require('platziverse-db')
 
-setupDatabase(config).then(db => {
+setupDabase(config).then(db => {
   const { Agent, Metric } = db
-}).catch( err => console.error(err))
 
+}).catch(err => console.error(err))
 ```

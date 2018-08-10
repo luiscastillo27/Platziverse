@@ -4,6 +4,7 @@
   "description": "A sumple IoT Api",
   "main": "index.js",
   "scripts": {
+    "test": "DEBUG=platziverse:* ava test/ -verbose",
     "start": "NODE_ENV=production node server.js",
     "start-dev": "DEBUG=platziverse:* nodemon server.js",
     "lint": "standard"
@@ -15,12 +16,21 @@
   "author": "Luis Manuel Castillo Zamorano",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^0.25.0",
     "nodemon": "^1.18.3",
-    "standard": "^11.0.1"
+    "proxyquire": "^2.0.1",
+    "sinon": "^6.1.5",
+    "standard": "^11.0.1",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",
     "debug": "^3.1.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "express-jwt": "^5.3.1",
+    "express-jwt-permissions": "^1.2.1",
+    "jsonwebtoken": "^8.3.0",
+    "platziverse-db": "file:../platziverse-db"
   }
 }
